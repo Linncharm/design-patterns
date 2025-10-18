@@ -16,10 +16,17 @@
     "facade": "ts-node 10-facade-pattern/facade-demo.ts",
     "builder": "ts-node 11-builder-pattern/builder-demo.ts",
     "command": "ts-node 12-command-pattern/command-demo.ts",
+    "solid:srp": "ts-node demo/1-srp.ts",
+    "solid:ocp": "ts-node demo/2-ocp.ts",
+    "solid:lsp": "ts-node demo/3-lsp.ts",
+    "solid:isp": "ts-node demo/4-isp.ts",
+    "solid:dip": "ts-node demo/5-dip.ts",
+    "solid:all": "npm run solid:srp && npm run solid:ocp && npm run solid:lsp && npm run solid:isp && npm run solid:dip",
     "all-frequent": "npm run factory && npm run singleton && npm run observer && npm run proxy && npm run decorator && npm run middleware",
-    "all": "npm run factory && npm run singleton && npm run observer && npm run proxy && npm run decorator && npm run middleware && npm run strategy && npm run adapter && npm run template && npm run facade && npm run builder && npm run command"
+    "all-patterns": "npm run factory && npm run singleton && npm run observer && npm run proxy && npm run decorator && npm run middleware && npm run strategy && npm run adapter && npm run template && npm run facade && npm run builder && npm run command",
+    "all": "npm run all-patterns && npm run solid:all"
   },
-  "keywords": ["design-pattern", "typescript", "factory", "singleton", "observer", "proxy", "decorator", "middleware", "strategy", "adapter", "template-method", "facade", "builder", "command"],
+  "keywords": ["design-pattern", "typescript", "solid", "oop", "factory", "singleton", "observer", "proxy", "decorator", "middleware", "strategy", "adapter", "template-method", "facade", "builder", "command"],
   "author": "",
   "license": "MIT",
   "devDependencies": {
