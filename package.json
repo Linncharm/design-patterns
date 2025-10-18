@@ -1,0 +1,30 @@
+{
+  "name": "design-pattern-demos",
+  "version": "1.0.0",
+  "description": "设计模式 TypeScript 示例",
+  "main": "index.ts",
+  "scripts": {
+    "factory": "ts-node 1-factory-pattern/factory-demo.ts",
+    "singleton": "ts-node 2-singleton-pattern/singleton-demo.ts",
+    "observer": "ts-node 3-observer-pattern/observer-demo.ts",
+    "proxy": "ts-node 4-proxy-pattern/proxy-demo.ts",
+    "decorator": "ts-node 5-decorator-pattern/decorator-demo.ts",
+    "middleware": "ts-node 6-middleware-pattern/middleware-demo.ts",
+    "strategy": "ts-node 7-strategy-pattern/strategy-demo.ts",
+    "adapter": "ts-node 8-adapter-pattern/adapter-demo.ts",
+    "template": "ts-node 9-template-method-pattern/template-method-demo.ts",
+    "facade": "ts-node 10-facade-pattern/facade-demo.ts",
+    "builder": "ts-node 11-builder-pattern/builder-demo.ts",
+    "command": "ts-node 12-command-pattern/command-demo.ts",
+    "all-frequent": "npm run factory && npm run singleton && npm run observer && npm run proxy && npm run decorator && npm run middleware",
+    "all": "npm run factory && npm run singleton && npm run observer && npm run proxy && npm run decorator && npm run middleware && npm run strategy && npm run adapter && npm run template && npm run facade && npm run builder && npm run command"
+  },
+  "keywords": ["design-pattern", "typescript", "factory", "singleton", "observer", "proxy", "decorator", "middleware", "strategy", "adapter", "template-method", "facade", "builder", "command"],
+  "author": "",
+  "license": "MIT",
+  "devDependencies": {
+    "@types/node": "^20.0.0",
+    "ts-node": "^10.9.0",
+    "typescript": "^5.0.0"
+  }
+}
