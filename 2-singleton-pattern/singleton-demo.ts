@@ -227,6 +227,13 @@ class DatabaseConnection {
   }
 
   /**
+   * 获取数据库配置
+   */
+  public getConfig(): Readonly<DatabaseConfig> | null {
+    return this.config ? { ...this.config } : null;
+  }
+
+  /**
    * 断开连接
    */
   public disconnect(): void {
@@ -301,7 +308,7 @@ class ConfigManager<T extends Record<string, unknown>> {
 }
 
 // ============ 应用配置类型 ============
-interface AppConfig {
+interface AppConfig extends Record<string, unknown> {
   appName: string;
   version: string;
   port: number;
